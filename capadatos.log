@@ -3,3 +3,29 @@
 10:43:06 AM: WARNING [logger_base.py:16] Mensaje a nivel warning
 10:43:06 AM: ERROR [logger_base.py:17] Mensaje a nivel error
 10:43:06 AM: CRITICAL [logger_base.py:18] Mensaje a nivel critico
+12:57:06 PM: DEBUG [persona.py:49]
+            id Persona: 1, Nombre: Juan
+            Apellido: Perez, Email: jperez@gmail.com
+
+01:01:45 PM: DEBUG [persona.py:49]
+            id Persona: 1, Nombre: Juan
+            Apellido: Perez, Email: jperez@gmail.com
+
+01:01:45 PM: DEBUG [persona.py:52]
+            id Persona: None, Nombre: Juan
+            Apellido: Perez, Email: jperez@gmail.com
+
+01:01:45 PM: DEBUG [persona.py:55]
+            id Persona: 1, Nombre: None
+            Apellido: None, Email: None
+
+02:14:50 PM: ERROR [conexion.py:30] Ocurri� un error al obtener la conexion 'utf-8' codec can't decode byte 0xf3 in position 79: invalid continuation byte
+02:19:15 PM: ERROR [conexion.py:30] Ocurrio un error al obtener la conexion 'utf-8' codec can't decode byte 0xf3 in position 79: invalid continuation byte
+02:21:17 PM: ERROR [conexion.py:30] Ocurrio un error al obtener la conexion 'utf-8' codec can't decode byte 0xf3 in position 79: invalid continuation byte
+02:21:54 PM: ERROR [conexion.py:30] Ocurrio un error al obtener la conexion 'utf-8' codec can't decode byte 0xf3 in position 79: invalid continuation byte
+02:23:31 PM: ERROR [conexion.py:32] Ocurrio un error al obtener la conexion 'utf-8' codec can't decode byte 0xf3 in position 79: invalid continuation byte
+03:31:37 PM: DEBUG [conexion.py:26] Conexion exitosa: <connection object at 0x00000275B9117010; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+03:31:37 PM: DEBUG [conexion.py:41] Se abrio correctamente el cursor: <cursor object at 0x00000275BABB6C00; closed: 0>
+03:32:54 PM: ERROR [conexion.py:30] Ocurrio un error al obtener la conexion 'utf-8' codec can't decode byte 0xf3 in position 79: invalid continuation byte
+03:33:09 PM: DEBUG [conexion.py:26] Conexion exitosa: <connection object at 0x00000184E0697010; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+03:33:09 PM: DEBUG [conexion.py:41] Se abrio correctamente el cursor: <cursor object at 0x00000184E2156C00; closed: 0>
