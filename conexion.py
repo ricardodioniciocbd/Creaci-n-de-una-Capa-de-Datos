@@ -10,8 +10,7 @@ class Conexion:
     _DB_PORT = '5432'
     _HOST = '127.0.0.1'
     _conexion = None
-    _cursor = None
-
+ 
     # Metodos de clase de optener cursor y conexion
     @classmethod
     def obtenerConexion(cls):
@@ -24,28 +23,22 @@ class Conexion:
                                            database=cls._DATABASE
                                            )
                 log.debug(f'Conexion exitosa: {cls._conexion}')
-                return cls._conexion
-
             except Exception as e:
                 log.error(f'Ocurrio un error al obtener la conexion {e}')
                 sys.exit()
-        else:
-            return cls._conexion
-
+        return cls._conexion
+ 
     # Metodo para obtener un cursor
     @classmethod
     def obtenerCursor(cls):
-        if cls._cursor is None:
-            try:
-                cls._cursor = cls.obtenerConexion().cursor()
-                log.debug(f'Se abrio correctamente el cursor: {cls._cursor}')
-            except Exception as e:
-                log.error(f'Ocurrio un error al obtener el cursor {e}')
-                sys.exit()
-
-        else:
-            return cls._cursor
-
+        try:
+            cursor = cls.obtenerConexion().cursor()
+            log.debug(f'Se abrio correctamente el cursor: {cursor}')
+            return cursor
+        except Exception as e:
+            log.error(f'Ocurrio un error al obtener el cursor {e}')
+            sys.exit()
+ 
 if __name__ == '__main__':
     Conexion.obtenerConexion()
     Conexion.obtenerCursor()
